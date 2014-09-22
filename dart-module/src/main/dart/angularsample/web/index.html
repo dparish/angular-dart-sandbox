@@ -1,0 +1,27 @@
+<html ng-app>
+
+<script src="packages/web_components/platform.js"></script>
+<script src="packages/web_components/dart_support.js"></script>
+
+<script type="application/dart" src="main.dart"></script>
+<script type="text/javascript" src="packages/browser/dart.js"></script>
+
+<link rel="stylesheet" type="text/css" href="main.css">
+    <body>
+        <div directory>
+            <h3>Person List</h3>
+            <ul>
+                <li class="pointer" ng-repeat="person in controller.people"
+                    ng-click="controller.selectPerson(person)">
+                    {{person.name}}
+                </li>
+
+            </ul>
+            <h3>Person Details</h3>
+            <div><strong>Name: </strong>{{controller.selectedPerson.name}}</div>
+            <div><strong>City: </strong>{{controller.selectedPerson.city}}</div>
+            <div><strong>State: </strong>{{controller.selectedPerson.state}}</div>
+        </div>
+    </body>
+
+</html>
