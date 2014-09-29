@@ -1,0 +1,15 @@
+apply plugin: de.bolchsteinegger.gradle.plugin.DartPlugin
+dart {
+    dartSdkHome = "$System.env.DART_SDK"
+    relativeSourceDirectory = 'src/main/dart/angularsample'
+}
+// defaultTask 'pubGet', 'pubBuild', 'testDart'
+buildscript {
+    repositories {
+        maven { url "http://travep.de/maven/" }
+    }
+    dependencies {
+        classpath 'de.bolchsteinegger:gradle-dart-plugin:0.1.0'
+    }
+}
+

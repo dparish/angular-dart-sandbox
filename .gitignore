@@ -2,6 +2,8 @@
 *.ipr
 *.iws
 target/
+.gradle/
+node_modules/
 .DS_Store
 packages/
 pubspec.lock

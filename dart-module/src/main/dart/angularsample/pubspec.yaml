@@ -4,7 +4,10 @@ dependencies:
   angular: 0.14.0
   model:
     path: ../model
+  js:
 dev_dependencies:
   unittest: any
+  browser_unittest: any
+  hop: any
 transformers:
 - angular

@@ -21,6 +21,9 @@
             <div><strong>Name: </strong>{{controller.selectedPerson.name}}</div>
             <div><strong>City: </strong>{{controller.selectedPerson.city}}</div>
             <div><strong>State: </strong>{{controller.selectedPerson.state}}</div>
+            <div><strong>Rating: </strong>
+                <rating max-rating="5" rating="{{controller.selectedPerson.id}}"></rating>
+            </div>
         </div>
     </body>
 
