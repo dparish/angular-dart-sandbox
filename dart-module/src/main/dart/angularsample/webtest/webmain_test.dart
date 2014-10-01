@@ -7,13 +7,12 @@ import '../web/main.dart';
 
 main() {
 
-  // useHtmlConfiguration(true);
+  // useHtmlConfiguration();
 
   group('directory', () {
-    // TODO: put back once we get web based tests working
     DirectoryControllerImpl controller = new DirectoryControllerImpl();
     test("person size", () {
-      expect(controller.people.length == 2, isTrue);
+      expect(controller.people.length == 3, isTrue);
     });
 
     test("true", () {

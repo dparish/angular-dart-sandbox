@@ -2,9 +2,6 @@ import 'package:angular/angular.dart';
 import 'package:angular/application_factory.dart';
 import 'package:model/model.dart';
 import 'package:di/di.dart';
-import 'directorylogic.dart';
-
-
 
 @Controller(
     selector: '[directory]',

@@ -4,13 +4,14 @@ module.exports = function(config) {
     frameworks: ['dart-unittest'],
 
     files: [
-      {pattern: 'test/main_test.dart',  included: true},
+      {pattern: 'webtest/webmain_test.dart',  included: true},
       {pattern: '**/*.dart', 				          included: false},
       {pattern: '**/*.html', 				          included: false}
     ],
 
     exclude: [
     ],
+
 
     autoWatch: true,
     captureTimeout: 20000,
