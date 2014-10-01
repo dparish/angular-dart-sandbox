@@ -1,20 +1,25 @@
 import 'package:angular/angular.dart';
 import 'package:angular/application_factory.dart';
 import 'package:model/model.dart';
+import 'package:di/di.dart';
+import 'directorylogic.dart';
+
+
 
 @Controller(
-  selector: '[directory]',
-  publishAs: 'controller'
+    selector: '[directory]',
+    publishAs: 'controller'
 )
-class DirectoryController {
+class DirectoryControllerImpl {
+
   List<Person> people;
   Person selectedPerson;
 
-  DirectoryController() {
-    people = _loadData();
+  DirectoryControllerImpl() {
+    people = loadData();
   }
 
-  List<Person> _loadData() {
+  List<Person> loadData() {
     return [
         new Person(1, "John Smith")
             ..city="centreville"
@@ -32,7 +37,7 @@ class DirectoryController {
 
 class MyAppModule extends Module {
   MyAppModule() {
-    bind(DirectoryController);
+    bind(DirectoryControllerImpl);
   }
 }
 
