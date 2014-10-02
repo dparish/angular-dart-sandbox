@@ -9,7 +9,7 @@
         <th>State</th>
       </tr>
     </thead>
-    <tr ng-repeat="person in cmp.persons | filter:{name: cmp.searchText}" person-row ng-click="cmp.selectPerson(person)">
+    <tr ng-repeat="person in cmp.persons" person-row ng-click="cmp.selectPerson(person)">
     <td>{{person.name}}</td>
     <td>{{person.phone}}</td>
     <td>{{person.street}}</td>

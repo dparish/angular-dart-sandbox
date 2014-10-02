@@ -13,9 +13,6 @@ class PersonList {
   @NgOneWay('persons')
   List<Person> persons;
   
-  @NgOneWay('searchText')
-  String searchText;
-  
   
   @NgOneWay('personClicked')
   Function personClicked;
