@@ -7,6 +7,7 @@ class MyAppModule extends Module {
     bind(SearchBox);
     bind(PersonRow);
     bind(PersonList);
+    bind(EditPerson);
     bind(Main);
   }
 }

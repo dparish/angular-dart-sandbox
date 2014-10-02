@@ -12,6 +12,7 @@ class PersonRow {
   @NgOneWay('person')
   Person person;
   
+  
   PersonRow() {
   }
 }

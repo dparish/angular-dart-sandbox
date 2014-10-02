@@ -6,8 +6,8 @@ part of components;
 @Component(
   selector: 'person-list',
   templateUrl: 'packages/angular_dart_demo/components/personList/personList.html',
-  cssUrl: 'packages/angular_dart_demo/components/personList/personList.css',
-  publishAs: 'cmp'    
+  publishAs: 'cmp',
+  useShadowDom: false
 )
 class PersonList {
   
@@ -19,4 +19,14 @@ class PersonList {
   
   PersonList() {
   }
+  
+  @NgCallback('personClicked')
+  Function personClicked;
+  
+  void selectPerson(Person person) {
+    print("Here we are");
+    print("person is:" + person.toString());
+    personClicked({"person" : person});
+  }
+  
 }

@@ -10,6 +10,7 @@ import 'package:di/di.dart';
 class DirectoryControllerImpl {
 
   List<Person> people;
+  
   Person selectedPerson;
 
   DirectoryControllerImpl() {

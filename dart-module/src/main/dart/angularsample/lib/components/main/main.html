@@ -1,2 +1,11 @@
-<search-box searchText="cmp.searchText"></search-box>
-<person-list persons="cmp.persons" searchText="cmp.searchText"></person-list>
+<div class="searchBoxContainer">
+  <search-box class="searchBox" searchText="cmp.searchText"></search-box>
+</div>
+
+<div class="flexRow">
+<edit-person person="cmp.selectedPerson"></edit-person>
+<div class="full">
+  <h2>All Users</h2>
+  <person-list persons="cmp.persons" searchText="cmp.searchText" personClicked="cmp.selectPerson(person)"></person-list>
+</div>
+</div>

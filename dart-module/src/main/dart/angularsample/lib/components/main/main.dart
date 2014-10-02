@@ -3,11 +3,14 @@ part of components;
 @Component(
   selector: 'main',
   templateUrl: 'packages/angular_dart_demo/components/main/main.html',
-  cssUrl: 'packages/angular_dart_demo/components/main/main.css',
-  publishAs: 'cmp'    
+  publishAs: 'cmp',
+  useShadowDom: false
 )
 class Main {
-  String searchText;
+  String searchText = "";
+  
+  @NgTwoWay('selectedPerson')
+  Person selectedPerson;
   
   List<Person> persons;
   
@@ -25,5 +28,10 @@ class Main {
                         ..phone = "512 555 2424"
                         ..street = "1234 Another street"
                         );
+    selectedPerson = persons[0];
+  }
+  
+  void selectPerson(Person person) {
+    selectedPerson = person;
   }
 }

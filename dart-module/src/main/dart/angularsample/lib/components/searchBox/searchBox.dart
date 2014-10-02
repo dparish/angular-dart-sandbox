@@ -6,8 +6,9 @@ part of components;
 @Component(
   selector: 'search-box',
   templateUrl: 'packages/angular_dart_demo/components/searchBox/searchBox.html',
-  cssUrl: 'packages/angular_dart_demo/components/searchBox/searchBox.css',
-  publishAs: 'cmp'    
+  // cssUrl: 'packages/angular_dart_demo/components/searchBox/searchBox.css',
+  publishAs: 'cmp',
+  useShadowDom: false
 )
 class SearchBox {
   
