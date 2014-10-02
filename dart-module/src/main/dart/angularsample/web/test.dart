@@ -6,6 +6,8 @@ class MyAppModule extends Module {
   MyAppModule() {
     bind(SearchBox);
     bind(PersonRow);
+    bind(PersonList);
+    bind(Main);
   }
 }
 

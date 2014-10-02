@@ -1,0 +1,11 @@
+<div class="container">
+  <table>
+    <tr ng-repeat="person in cmp.persons | filter:{name: cmp.searchText}" person-row>
+    <td>{{person.name}}</td>
+    <td>{{person.phone}}</td>
+    <td>{{person.street}}</td>
+    <td>{{person.city}}</td>
+    <td>{{person.state}}</td>
+    </tr>
+  </table>
+</div>

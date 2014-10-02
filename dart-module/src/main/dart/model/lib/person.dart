@@ -8,7 +8,7 @@ class Person extends BaseModel {
   String state;
 
   Person(int id, String name) : super(id, name);
-
+  
   Person.fromJsonMap(Map json) : super.create() {
     id = json['id'];
     name = json['name'];

@@ -5,6 +5,7 @@ target/
 .gradle/
 node_modules/
 node/
+build/
 .DS_Store
 packages/
 pubspec.lock
